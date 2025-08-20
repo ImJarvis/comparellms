@@ -1,0 +1,6 @@
+{
+  "name": "LLM Comparator",
+  "description": "Compare responses from top AI models side-by-side. Enter a prompt and get a synthesized answer with sources.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

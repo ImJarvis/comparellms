@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLM Comparator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-bg': '#ffffff',
+              'brand-surface': '#f8fafc',
+              'brand-primary': '#6366f1',
+              'brand-primary-hover': '#4f46e5',
+              'brand-secondary': '#e2e8f0',
+              'brand-text-primary': '#0f172a',
+              'brand-text-secondary': '#334155',
+            },
+            animation: {
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .prose-styles {
+        line-height: 1.7;
+      }
+      .prose-styles h1, .prose-styles h2, .prose-styles h3, .prose-styles h4, .prose-styles h5, .prose-styles h6 {
+        color: #0f172a;
+        font-weight: 600;
+        margin-top: 1.25em;
+        margin-bottom: 0.5em;
+      }
+      .prose-styles h1 { font-size: 2em; }
+      .prose-styles h2 { font-size: 1.5em; }
+      .prose-styles h3 { font-size: 1.25em; }
+      .prose-styles p {
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+      .prose-styles a {
+        color: #4f46e5;
+        text-decoration: underline;
+        text-decoration-color: #a5b4fc;
+      }
+      .prose-styles a:hover {
+        text-decoration-color: #4f46e5;
+      }
+      .prose-styles strong {
+        color: #0f172a;
+        font-weight: 600;
+      }
+      .prose-styles blockquote {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        padding-left: 1em;
+        border-left: 0.25em solid #e2e8f0;
+        color: #475569;
+      }
+      .prose-styles ul, .prose-styles ol {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-left: 1.5em;
+      }
+      .prose-styles li {
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+      }
+      .prose-styles code {
+        background-color: #e2e8f0;
+        color: #1e293b;
+        padding: 0.2em 0.4em;
+        margin: 0;
+        font-size: 85%;
+        border-radius: 6px;
+        font-family: monospace;
+      }
+      .prose-styles pre {
+        background-color: #0f172a;
+        color: #e2e8f0;
+        padding: 1em;
+        border-radius: 8px;
+        overflow-x: auto;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+      }
+      .prose-styles pre code {
+        background-color: transparent;
+        color: inherit;
+        padding: 0;
+        margin: 0;
+        font-size: 100%;
+      }
+      .prose-styles table {
+          width: 100%;
+          margin-top: 1.5em;
+          margin-bottom: 1.5em;
+          border-collapse: collapse;
+      }
+      .prose-styles th, .prose-styles td {
+          border: 1px solid #e2e8f0;
+          padding: 0.5em 0.75em;
+      }
+      .prose-styles th {
+          font-weight: 600;
+          background-color: #f1f5f9;
+          color: #0f172a;
+      }
+      .prose-styles > *:first-child {
+        margin-top: 0;
+      }
+      .prose-styles > *:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.13.0",
+    "react-markdown": "https://esm.sh/react-markdown@^9.0.1",
+    "remark-gfm": "https://esm.sh/remark-gfm@^4.0.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-bg">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
