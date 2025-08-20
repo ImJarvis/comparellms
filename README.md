@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://storage.googleapis.com/gemini-ui-params/fledge/2024/brand_icon_comparator.svg" alt="LLM Comparator Logo" width="120">
   <h1 style="border-bottom: none; font-size: 2.5rem;">LLM Comparator</h1>
   <p>
     <strong>The definitive way to compare, analyze, and synthesize responses from top AI models.</strong>
@@ -16,12 +15,6 @@
 
 <div align="center">
   <p>Witness the power of multi-model AI analysis. Enter one prompt, get multiple perspectives, and receive a single, fact-checked summary powered by Google Gemini and Search.</p>
-  
-  *A short GIF or video showcasing the app's workflow would go here. Imagine this:*
-  
-  **[Placeholder for a GIF: A screen recording shows the user selecting 3 models, typing "What are the pros and cons of nuclear energy?", then watching as the summary card and three response cards populate. The user's cursor hovers over one response card, which smoothly expands to reveal its full text, then retracts.]**
-
-  ![LLM Comparator Screenshot](https://storage.googleapis.com/gemini-ui-params/fledge/2024/comparator_screenshot.png)
 </div>
 
 ## ✨ Key Features
